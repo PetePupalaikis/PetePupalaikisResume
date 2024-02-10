@@ -1,0 +1,578 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{extarticle}
+\usepackage[
+letterpaper,
+left=0.75in,
+right=0.75in,
+top=0.5in,
+bottom=0.5in,
+headsep=0.1in,
+]{geometry}
+\topmargin=-60pt
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{fancyhdr}
+\usepackage{color}
+\pagestyle{empty}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\tabcolsep}{0em}
+%\fancyhead[CO,CE]{Peter J. Pupalaikis}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+\fancyhead[CO,CE]{\LARGE {Peter J. Pupalaikis}}
+\begin{center}
+%{\LARGE \textbf{Peter J. Pupalaikis}}
+\vspace{2em}
+\hrule
+\vspace{0.4em}
+16 Fox Hollow Road\ \textbullet
+\ Ramsey, NJ  07446 USA \textbullet
+\ (845) 323-1376 \textbullet
+\ pete\_pope@hotmail.com
+\end{center}
+\vspace{-0.5em}
+\hrule
+\vspace{-0.6em}
+\center{\Large \textbf{\textsc{Technical Executive with Accomplished Design Engineering Experience}}}\\
+{
+A highly versatile engineer and executive who has worked in research, design, marketing and management. }
+\vspace{0.4em}\hrule
+\vspace{-1em}\subsection*{\Large Honors and Awards}\vspace{-0.5em}
+%\begin{itemize}
+%	%\parskip=0.1em
+	
+	\item[]
+	\headerrow
+		{\large \textsc{IEEE Fellow -- for contributions to high-speed waveform digitizing instruments}}
+		{Jan 2013}
+	\headerrow
+		{\large \textsc{National Academy of Engineering -- for DSP for test \& measurement instruments}}
+		{Feb 2024}
+\hrule
+%\vspace{-1em}\subsection*{\Large \colorbox[gray]{0.9}{Professional Experience}}\vspace{-0.5em}
+\vspace{-1em}\subsection*{\Large Professional Experience}\vspace{-0.5em}
+%\begin{itemize}
+%	\parskip=0.1em
+%	\item[]
+	\headerrow
+		{\large \textbf{Nubis Communications, Inc.}, New Providence, NJ}
+		{Sep 2020 - present}
+	\\
+	\headerrow
+		{\large \textsc{Founding Member -- Director of Signal Integrity}}
+		{Sep 2020 - present}\vspace{-\topsep}\begin{itemize*}
+		\item Develop high-speed electrical-optical transceivers.
+		\item Design and develop end-to-end electrical-optical link simulator including analysis of link performance.
+		\item Design and develop tester including sockets, high-speed test boards, and microprocessor based control boards.
+		\item Perform signal and power integrity analysis.
+		\item Perform 3D CAD modeling, 3D printing, and numerically controlled machining of parts.
+	\end{itemize*}
+	%\vspace{-\topsep}
+	\headerrow
+		{\large \textbf{Teledyne LeCroy}, Chestnut Ridge, NY}
+		{Sep 1995 - Sep 2020}
+	\\
+	\headerrow
+		{\large \textsc{Vice President – Advanced Technology Development}}
+		{Mar 2009 - Sep 2020}\vspace{-\topsep}\begin{itemize*}
+		\item Develop artificial intelligence, signal integrity, power integrity and signal processing algorithms.
+		\item Managed R\&D budget and personnel in the development of high-speed analog and digital integrated circuits.
+		\item Manage the development of signal processing technology.
+		\item Manage intellectual property and other technology development.
+		\item Managed a team of engineers, marketing and production professionals in an
+		entrepreneurial startup-like group in the development of the SPARQ and the WavePulser 40iX, a new class of 
+		signal-integrity measurement instrumentation. (launched Oct 2010, Jun 2019)
+		\item Lead and perform product conception, business case analysis, architecture,
+		design, product requirement and feature definition, strategic partner negotiations, 
+		customer visits, algorithm and software development, product positioning and 
+		marketing, sales training and manufacturing process development. 
+		\item Worked with Bell Laboratories engineers in the development of the world's fastest arbitrary waveform generator (100 GHz, 240 GS/s) (2016).
+	\end{itemize*}\vspace{-\topsep}
+	\headerrow
+	{\large \textsc{Vice President – Strategic Marketing}}
+	{Feb 2008 – Mar 2009}\vspace{-\topsep}\begin{itemize*}
+		\item Managed the product marketing organization for the oscilloscope division, 
+		specifically the interface between sales and marketing  and engineering 
+		while representing  marketing among the executive team.
+		\item Responsible for the product road map and all inbound marketing activities 
+		including product requirements definition and planning for a \$150M revenue stream.
+		\item Managed the performance of competitive win/loss analysis, strategy development 
+		and execution, business case analysis, technical feasibility, business objectives 
+		performance and P\&L management.
+	\end{itemize*}\vspace{-\topsep}
+	\headerrow
+	{\large \textsc{Manager – Serial Data \& Signal Integrity Solutions}}
+	{Sep 2007 – Feb 2008}\vspace{-\topsep}\begin{itemize*}
+	\item Managed the engineering and marketing organization in a product group responsible 
+	for delivering measurement solutions such as PCI-Express, HDMI, SAS, SATA, UWB, WiMax 
+	compliance and debugging tests and jitter analysis and signal integrity measurements.
+	\end{itemize*}\vspace{-\topsep}
+	\headerrow
+	{\large \textsc{Principal  Technologist}}
+	{Apr 2004 – Aug 2008}\vspace{-\topsep}\begin{itemize*}
+	\item Worked directly for the Chief Technology Officer in the research and development
+	of new technology in the areas of digital signal processing, RF and microwave
+	 technologies and high speed digitizers.
+	\item Researched and developed advanced tools for high speed serial data measurements
+	 such as adaptive equalizer emulation and optimization, s-parameter calculation and
+	 system co-simulation, jitter analysis and bit-error-rate testing.
+	\item Program manager, chief architect and inventor of key technologies for high-speed
+	real-time serial data analyzers including the highest speed real-time analyzer in the
+	world. (Mar 2005,  May 2006)
+	\item Earned the LeCroy Extraordinary Contributor award of \$100K, 6 month research grant and sabbatical (2004 and 2005).
+	\end{itemize*}\vspace{-\topsep}
+	\headerrow
+	{\large \textsc{Product Marketing Manager - WaveMaster Oscilloscopes}}
+	{Nov 2002 – Apr 2004}\vspace{-\topsep}\begin{itemize*}
+	\item Product Manager for LeCroy's highest performance digital oscilloscope and probes
+	line (product line annual revenues approximately \$35M).
+	\end{itemize*}\vspace{-\topsep}
+	\headerrow
+	{\large \textsc{Chief Engineer - DSP Technology and Business Development}}
+	{Dec 2000 - Nov 2002}\vspace{-\topsep}\begin{itemize*}
+	\item Researched and developed digital signal processing technology for magnitude 
+	and group delay compensation, bandwidth extension, digital phase-locked loops, jitter 
+	analysis, time-domain reflectometry and signal fidelity improvement of oscilloscope 
+	channels.
+	\end{itemize*}\vspace{-\topsep}
+\clearpage
+\fancyhead[CO,CE]{\LARGE \textcolor[gray]{0.7}{Peter J. Pupalaikis}}
+	\headerrow
+	{\large \textbf{Profesional Experience Cont'd}}
+	{}\\
+	\headerrow
+	{\large \textsc{Manager - Acquisition Systems Software Group}}
+	{Jun 1998 - Dec 2000}\vspace{-\topsep}\begin{itemize*}
+	\item Managed  software team to control and calibrate waveform digitizing and acquisition system.
+	\item Developed the WavePro 960 Oscilloscope (Oct 2000).
+	\item Lead software engineer in joint development with Japanese test and measurement 
+	company (Jan 1999).
+	\end{itemize*}\vspace{-\topsep}
+	\headerrow
+	{\large \textsc{Senior Product Development Engineer}}
+	{Sep 1995 - Jun 1998}\vspace{-\topsep}\begin{itemize*}
+	\item Developed vertical market software for data storage and optical recording industries.
+	\item Performed mathematical and statistical analysis of calibration and measurement accuracy.
+	\item Wrote embedded software in C and C++.
+	\end{itemize*}%\vspace{-\topsep}
+	\headerrow
+		{\large \textbf{Honeywell Industrial Automation and Controls}, Ft. Washington, PA}
+		{Aug 1991 - Sep 1995}
+	\\
+	\headerrow
+		{\large \textsc{Senior Development Engineer}}
+		{}
+	\vspace{-2em}\begin{itemize*}
+		\item Designed and developed electronic hardware and software for industrial
+		measurement instruments and control systems including temperature, pressure and flow
+		measurement and metering devices.
+		\item Wrote embedded real-time software in C and 68HC11 assembly language.
+		\item Lead software engineer in joint product developments with foreign and domestic
+		companies.
+	\end{itemize*}
+	\headerrow
+		{\large \textbf{Independent Contractor}, Philadelphia, PA}
+		{May 1986 - Aug 1991}
+	\\
+	\headerrow
+		{\large \textsc{Sole Proprietor – Consulting and Contracting Engineer}}
+		{}
+	\vspace{-2em}\begin{itemize*}
+	 \item Sole proprietor of independent embedded systems development company
+	 \item Designed embedded software for traffic control systems for New York City and
+	 Norfolk, VA.
+	 \item Designed hardware and software for utility meter test systems and power line
+	 analyzers.
+	 \item Designed and developed electronic control systems.
+	\end{itemize*}
+
+
+%\end{itemize}
+
+\hrule
+\vspace{-1em}\subsection*{\Large Education}\vspace{-0.5em}
+%\begin{itemize}
+%	\parskip=0.1em
+
+	\item[]
+	\headerrow
+		{\large \textbf{University of Pennsylvania - The Wharton School}, Philadelphia, PA}
+		{Sep 2007 - Oct 2007}
+	\\
+	\headerrow
+		{\large \textsc{Advanced Management Program}}
+		{}
+	\item[]
+	\headerrow
+		{\large \textbf{Rutgers University, College of Engineering}, New Brunswick, NJ}
+		{Sep 1984 - Jun 1988}
+	\\
+	\headerrow
+		{\large \textsc{Bachelor of Science, Electrical Engineering} \emph{(magna cum laude)}}
+		{}
+	\vspace{-1.8em}\begin{itemize*}
+		\item Elected to Tau Beta Pi and Eta Kappa Nu Engineering Honors Societies.
+	\end{itemize*}
+%\end{itemize}
+
+\hrule
+\vspace{-1em}\subsection*{\Large Active Military Service}\vspace{-0.5em}
+%\begin{itemize}
+%	\parskip=0.1em
+	
+	\item[]
+	\headerrow
+		{\large \textbf{The United States Army}, Seneca Depot, Romulus, NY - two year enlistment}
+		{Sep 1982 - Sep 1984}
+	\\
+	\headerrow
+		{\large \textsc{Specialist Four} \emph{(honorable discharge)}}
+		{}
+	\vspace{-2em}\begin{itemize*}
+		\item Served the depot mission in the deployment of the Pershing II tactical nuclear
+		missile.
+		\item Sharpshooter (M16 Rifle), Army Achievement and Good Conduct Medal, and Cold War
+		Certificate.
+	\end{itemize*}
+%\end{itemize}
+
+\hrule
+\vspace{-1em}\subsection*{\Large Demonstrated Skills}\vspace{-0.5em}
+	\parskip=0.1em
+\begin{flushleft} 
+
+\vspace{0.2em}
+\headerrow
+{\large \textbf{Management}}{}\vspace{-0.7em}
+\begin{indentsection}{-1em}\begin{itemize*}
+		\item {Technical Teams Leadership}% -- Lead large and small teams of very high level engineers. Manage industrial research, development, and projects.  Areas of management experience include: software development and software groups, chip design departments, outsourced engineering teams, all aspects of electronic instrument development, and joint developments.
+		\item {Patent Portfolio Management}% -- Manage all aspects including writing patent applications, and decisions balancing portfolio value add.  Involved in all aspects of prosecution, examiner interviews, and re-examinations.
+                  \item {Strategy}% -- Strategic thinker who identifies successful product aspects and develops needed technology.
+                 \item {Communication}% - Present often, both internally and externally.  Constantly engage customers delivering high technical value while understanding product requirements.  A prolific writer.
+               \item {Business}% - Knowledgable in business, accounting and bookkeeping.
+\end{itemize*}\end{indentsection}
+\headerrow
+{\large \textbf{Technical and Engineering}}{}\vspace{-0.7em}
+\begin{indentsection}{-1em}\begin{itemize*}
+		\item {Software Development} -- C, \CPP, Python and many machine languages.% -- Develop software in many languages, including C, \CPP, Python and many machine languages.  Engaged in modern software development workflows including version control, and open-source software development.  Host several projects on GitHub.
+		\item {Applied Mathematics}% -- Apply linear algebra techniques proficiently.  Derive and develop algorithms for system analysis and machine learning.  Expert in data and model fitting using linear and nonlinear methods.
+                  \item {Signal Processing and Control Systems}% -- Deep understanding and demonstrated skill in methods for processing signals.  Inventor of many algorithms.
+                  \item {Signal Integrity}% -- Expert knowledge of scattering parameters and microwave measurements, especially the mathematical algorithms.
+\end{itemize*}\end{indentsection}
+\headerrow
+{\large \textbf{Other Skills}}{}\vspace{-0.0em}
+Demonstrated proficiency in microwave systems, microwave filter design, electronics -- both digital and analog, measurement and measurement instrument design, statistics, artificial neural networks and machine learning algorithms, and fuzzy logic.  Fluent in all areas of electrical engineering and have designed electronic hardware, including board layout.
+\end{flushleft}
+\clearpage
+\hrule
+\vspace{-1em}\subsection*{\Large Patents}\vspace{-0.5em}
+	\parskip=0.1em
+\begin{flushleft} 
+	Over 50 US Patents with many matching foreign patents issued in the area of measurement instrument
+	design.
+	
+	Key inventor of technology called Digital Bandwidth Interleaving (DBI), a microwave/DSP technology that has enabled LeCroy to produce industry-leading bandwidth oscilloscopes including the latest record of 100 GHz, 240 GS/s digitizer channels and the fastest arbitrary waveform generator in the world, also 100 GHz, 240 GS/s.
+\end{flushleft}
+\vspace{-0.4em}
+\headerrow
+		{11,895,798 - Data Processing Systems Including Optical Communication Modules}
+		{Feb 2024}
+\headerrow
+		{10,768,211 - System and Method for Current Sense Resistor Compensation}
+		{Aug 2020}
+\headerrow
+		{10,725,070 - Variable Resolution Oscilloscope (continuation)}
+		{Jul 2020}
+\headerrow
+		{10,693,434 - RC Time Constant Measurement}
+		{Jun 2020}
+\headerrow
+		{10,659,071 - High Bandwidth Oscilloscope (continuation)}
+		{May 2020}
+\headerrow
+		{10,564,191 - Test Tool for Power Distribution Networks}
+		{Feb 2020}
+\headerrow
+		{10,551,417 - Inductor Current Measurement Probe}
+		{Feb 2020}
+\headerrow
+		{10,534,019 - Variable Resolution Oscilloscope}
+		{Jan 2020}
+\headerrow
+		{10,396,907 - Time-domain Reflectometry Step to S-Parameter Conversion}
+		{Aug 2019}
+\headerrow
+		{10,333,540 - High Bandwidth Oscilloscope (continuation)}
+		{Jun 2019}
+\headerrow
+		{10,135,456 - High Bandwidth Oscilloscope (continuation)}
+		{Nov 2018}
+\headerrow
+		{9,660,661 - High Bandwidth Oscilloscope (continuation)}
+		{May 2017}
+\headerrow
+		{9,366,743 - Time-Domain Network Analyzer}
+		{Jun 2016}
+\headerrow
+		{9,325,342 - High Bandwidth Oscilloscope (continuation)}
+		{Apr 2016}
+\headerrow
+		{9,231,608 - Method and Apparatus for Correction of Time Interleaved ADCs}
+		{Jan 2016}
+\headerrow
+		{9,194,930 - Method for De-embedding in Network Analysis}
+		{Nov 2015}
+\headerrow
+		{8,843,335 - Wavelet Denoising for Time-domain Network Analysis}
+		{Sep 2014}
+\headerrow
+		{8,706,438 - Time-Domain Network Analyzer}
+		{Apr 2014}
+\headerrow
+		{8,706,433 - Time-Domain Reflectometry Step to S-Parameter Conversion}
+		{Apr 2014}
+\headerrow
+		{8,659,315 - Method for Printed Circuit Board Trace Characterization}
+		{Feb 2014}
+\headerrow
+		{8,583,390 - High Bandwidth Oscilloscope (continuation)}
+		{Nov 2013}
+\headerrow
+		{8,566,058 - Method for De-embedding Device Measurements}
+		{Oct 2013}
+\headerrow
+		{8,532,953 - Method for Multiple Trigger Path Triggering}
+		{Sep 2013}
+\headerrow
+		{8,390,300 - Time-Domain Reflectometry in a Coherent Interleaved Sampling Timebase}
+		{Mar 2013}
+\headerrow
+		{8,386,208 - Method and Apparatus for Trigger Scanning}
+		{Feb 2013}
+\headerrow
+		{8,190,392 - Method and Apparatus for Multiple Trigger Path Triggering}
+		{May 2012}
+\headerrow
+		{8,170,820 - Virtual Probing (continuation)}
+		{May 2012}
+\headerrow
+		{8,073,656 - High Bandwidth Oscilloscope (continuation)}
+		{Dec 2011}
+\headerrow
+		{7,865,319 - Fixture De-embedding Method}
+		{Jan 2011}
+\headerrow
+		{7,711,510 - Method for Crossover Phase Correction When Combining Frequency Bands}
+		{May 2010}
+\headerrow
+		{7,660,685 - Virtual Probing and Probe Compensation}
+		{Feb 2010}
+\headerrow
+		{7,653,514 - High Bandwidth Oscilloscope (continuation)}
+		{Jan 2010}		
+\headerrow
+		{7,634,693 - Method and Apparatus for Analyzing Serial Data Streams}
+		{Dec 2009}
+\headerrow
+		{7,535,394 - High Speed Arbitrary Waveform Generator}
+		{May 2009}		
+\headerrow
+		{7,519,513 - High Bandwidth Real-time Oscilloscope (continuation)}
+		{Apr 2009}		
+\headerrow
+		{7,450,043 - Method for Jitter Compensation for Systems of Interleaved Digitizers}
+		{Nov 2008}
+\headerrow
+		{7,437,624 - Method and Apparatus for Analyzing Serial Data Streams}
+		{Oct 2008}
+\headerrow
+		{7,434,113 - Method of Analyzing Serial Data Streams}
+		{Oct 2008}
+\headerrow
+		{7,386,409 - Method for Treating Spurs in Systems of Mismatching Interleaved Digitizers}
+		{Jun 2008}
+\headerrow
+		{7,373,281 - High Bandwidth Real-time Oscilloscope (continuation)}
+		{May 2008}
+\headerrow
+		{7,222,055 - High Bandwidth Real-time Oscilloscope (continuation)}
+		{May 2007}
+\headerrow
+		{7,219,037 - Digital Heterodyning Oscilloscope}
+		{May 2007}
+\headerrow
+		{7,139,684 - High Bandwidth Real-time Oscilloscope (continuation)}
+		{Nov 2006}
+\headerrow
+		{7,058,548 - High Bandwidth Real-time Oscilloscope}
+		{Jun 2006}
+\headerrow
+		{7,050,918 - Digital Group Delay Compensator}
+		{May 2006}
+\headerrow
+		{6,819,279 - Method and Apparatus for Matching Digitizers in Interleaved Systems}
+		{Nov 2004}
+\headerrow
+		{6,701,335 + RE40,802 + RE39,693 - Digital Frequency Response Compensation System}
+		{Mar 2004}
+\headerrow
+		{6,567,030 - Sample Synthesis for Matching Digitizers In Interleaved Systems}
+		{May 2003}
+\headerrow
+		{6,542,914 + RE42,809 - Method and Apparatus for Increasing Bandwidth In Sampled Systems}
+		{Apr 2003}
+\headerrow
+		{6,112,160 - Optical Recording Measurement Package}
+		{Aug 2000}
+\headerrow
+		{5,754,452 - Method and Apparatus for Increasing Update Rates In Measurement Instruments}
+		{Jul 1995}
+\vspace{0.2em}
+\clearpage
+\hrule
+%\vspace{-1em}\subsection*{\Large Patent Publications}\vspace{-0.5em}
+%\begin{flushleft}
+%US 12/890,832 - Wavelet Denoising for Time-Domain Network Analysis\\
+%US 11/906,658 - Method for Efficient Waveform Processing
+%\end{flushleft}
+%\vspace{0.2em}
+%\hrule
+\vspace{-1em}\subsection*{\Large Books}\vspace{-0.5em}
+\begin{indentsection}{-1em}\begin{itemize}
+\parskip=-0.2em
+\item Pupalaikis, P. (2020). \emph{S-Parameters for Signal Integrity}. Cambridge: Cambridge University Press.\\ doi:10.1017/9781108784863
+\item Pupalaikis, P., \& Doshi, K. (2013). TDR-based S-parameters. In V. Teppati, A. Ferrero, \& M. Sayed (Eds.), \emph{Modern RF and Microwave Measurement Techniques} (The Cambridge RF and Microwave Engineering Series, pp. 279-306). Cambridge: Cambridge University Press. doi:10.1017/CBO9781139567626.012
+\end{itemize}\end{indentsection}
+
+\vspace{0.2em}
+%\clearpage
+\hrule
+\vspace{-1em}\subsection*{\Large Published Papers}\vspace{-0.5em}
+\begin{indentsection}{-1em}\begin{itemize}
+\parskip=-0.2em
+\item P. Pupalaikis, "\emph{Techniques for Using S-Parameters in PDN Analysis}", DesignCon, Santa Clara CA, 2024.
+\item P. Winzer et al., "\emph{Ultra­-dense and Ultra-­low power 16x112­Gbps Linear Drive Silicon Photonics
+for ML/AI}",  in OCP Future Technologies Symposium, Open Compute Project Summit, October 2023.
+\item P. Pupalaikis et al., "\emph{Simulation and Analysis of E/O Communication Links Using Open-Source Software}", DesignCon, Santa Clara CA, 2023.
+\item P. Pupalaikis, "\emph{Open-Source Software Tools for Signal Integrity}", DesignCon, Santa Clara CA, 2019.
+\item P. Pupalaikis, "\emph{Understanding Vertical Resolution in Oscilloscopes}", DesignCon, Santa Clara CA, 2017.
+\item I. Novak \& P. Pupalaikis, "\emph{A Generic Test Tool for Power Distribution Networks}", DesignCon, Santa Clara CA, 2017.
+\item P. Pupalaikis et al., "\emph{The Fastest PAM-4 Signal Ever Generated}", DesignCon, Santa Clara CA, 2017.
+\item I. Novak et al., "\emph{Current Sharing Measurements in Multi-Phase Swtich Mode DC-DC Converters}", EDICON, Boston MA, 2017. 
+\item P. Pupalaikis et al., "\emph{Technologies for Very High Speed Real-time Oscilloscopes}", Proceedings of the Bipolar/BiCMOS Circuits and Technology Meeting, 2014, invited paper.
+\item  V. Dmitriev-Zdorov et al., "\emph{Computation of Time Domain Impedance Profile from S-parameters: Challenges and Methods}", DesignCon, Santa Clara CA, 2014.
+\item P. Pupalaikis \& K. Doshi, "\emph{A Fast and Inexpensive Method for PCB Trace Characterization in Production Environments}", DesignCon, Santa Clara CA, 2013.
+\item P. Pupalaikis, “\emph{A Patent Application Design Flow in LaTeX and LyX}”, TUGboat 33(3), 276-281, 2012
+\item P. Pupalaikis, “\emph{The Relationship Between Discrete-Frequency S-Parameters and Continuous-Frequency Responses}”, DesignCon, Santa Clara CA, 2012 .
+\item K. Doshi et al., “\emph{Fast and Optimal Algorithms for Enforcing Reciprocity, Passivity and Causality in S-parameters}”, DesignCon, Santa Clara CA, 2012 .
+\item P. Pupalaikis, “\emph{Wavelet Denoising for TDR Dynamic Range Improvement}”, DesignCon, Santa Clara CA, 2011.
+\item D. DeGroot et al., “\emph{Total-Loss: How to Qualify PCBs}”, DesignCon, Santa Clara CA, 2011. 
+\item P. Pupalaikis et al., “\emph{A 30 GHz, 80 GS/s Real-Time Waveform Digitizing System}”, Optical Fiber Communications Conference (OFC), San Diego CA, 2010. 
+\item J. Kenney et al., “\emph{Timing Measurements in Source Terminated Memory Systems with Inaccessible Probing Points}”, DesignCon, Santa Clara CA, 2010. 
+\item P. Wittwer et al., “\emph{A General Closed-Form Solution to Multi-Port Scattering Parameter Calculations}”, 72nd ARFTG Conference, Portland OR, 2008.
+\item P. Pupalaikis, “\emph{Validation Methods for S-Parameter Based Models of Differential Transmission Lines}”, DesignCon, Santa Clara CA 2008. 
+\item P. Pupalaikis, “\emph{An 18 GHz, 60 GS/s Waveform Digitizing System}”, IEEE MTT-S International Microwave Symposium (IMS), Honolulu HI, 2007. 
+\item P. Pupalaikis, “\emph{Group Delay and its Impact on Serial Data Transmission and Testing}”, DesignCon, Santa Clara CA, 2006. 
+\item P. Pupalaikis et al., “\emph{Eye Patterns in Scopes}”, DesignCon, Santa Clara CA, 2005. 
+\item P. Pupalaikis, “\emph{Bilinear Transformation Made Easy}”, International Conference on Signal Processing and Technology (ICSPAT), Dallas TX, 2000 
+\end{itemize}\end{indentsection}
+\begin{flushleft} 
+\parskip=-0.2em
+Co-author on ground-breaking research papers in optical communications with Bell Labs researchers including many optical communications world records using LeCroy high-speed waveform digitizers:
+\end{flushleft}
+\begin{indentsection}{-1em}\begin{itemize}
+\parskip=-0.2em
+\item X. Chen, S. Chandrasekhar, P. Pupalaikis \& P. Winzer, "\emph{Fast DAC Solutions for Future High Symbol Rate Systems}", Optical Fiber Communication Conference, OSA, 2017.
+\item X. Chen, S. Chandrasekhar, S. Randel, G. Raybon, A. Adamiecki, P. Pupalaikis and P. Winzer, "All-electronic 100-GHz Bandwidth Digital-to-Analog Converter Generating PAM Signals up to 190-GBaud," in OFC Conference Proceedings, Optical Fiber Communication Conference (OFC)/NFOEC, San Diego CA, 2016
+\item G. Raybon, B. Guan, A. Adamiecki, et al., "\emph{160-Gbaud Coherent Receiver Based on 100-GHz Bandwidth, 240-GS/s Analog-to-Digital Conversion}",  Optical Fiber Communication Conference, OSA, San Diego, CA, 2015.
+\item R. Ryf, N. Fontaine, H. Chen, B. Guan, S. Randel, N. Sauer, S. Yoo, A. Koonen, R. Delbue, P. Pupalaikis, A. Sureka, R. Shubochkin, Y. Sun, and R. Lingle, "23~Tbit/s Transmission over 17-km Conventional 50 um Graded-Index Multimode Fiber," in Optical Fiber Communication Conference: Postdeadline Papers,  (Optical Society of America, 2014), paper Th5B.1.
+\clearpage
+\headerrow
+	{\large \textbf{Published Papers Cont'd}}
+	{}\\
+\item R. Ryf, S. Randel, N. Fontaine, M. Montoliu, E. Burrows, S. Chandrasekhar, A. Gnauck, C. Xie, R. Essiambre, P. Winzer, R. Delbue, P. Pupalaikis, A. Sureka, Y. Sun, L. Gruner-Nielsen, R. Jensen \& R. Lingle, “\emph{32-bit/s/Hz Spectral Efficiency WDM Transmission over 177-km Few-Mode Fiber}”, OFC, Anaheim CA, 2013.
+\item R. Ryf, M. Mestre, S. Randel, X. Palou, A. Gnauck, R. Delbue, P. Pupalaikis, A. Sureka, Y. Sun, X. Jiang \& R. Lingle, “\emph{Combined SDM and WDM Transmission Over 700-km Few-Mode Fiber}”, OFC, Anaheim CA, 2013.
+\item R. Ryf, N. Fontaine, M. Mestre, S. Randel, X. Palou, C. Bolle, A. Gnauck, S. Chandrasekhar, X. Liu, B. Guan, R. Essiambre, P. Winzer, S. Leon-Saval, J. Bland-Hawthorn, R. Delbue, P. Pupalaikis, A. Sureka, Y. Sun, L. Grüner-Nielsen, R. Jensen \& R. Lingle, “\emph{12 x 12 MIMO Transmission over 130-km Few-Mode Fiber}”, Frontiers in Optics, Rochester NY, 2012.
+\item S. Randel, R. Ryf, A. Gnauck, M. Mestre, C. Schmidt, R. Essiambre, P. Winzer, R. Delbue, P. Pupalaikis, A. Sureka, Y. Sun, X. Jiang \& R. Lingle, “\emph{Mode-Multiplexed 6 x 20-GBd QPSK Transmission over 1200-km DGD-Compensated Few-Mode Fiber}”, National Fiber Optic Engineers Conference (NFOEC), Los Angeles, CA, 2012.
+\item R. Essiambre, A. Gnauck, S. Randel, M. Mestre, C. Schmidt, P. Winzer, R. Delbue, P. Pupalaikis, A. Sureka, T. Hayashi, T. Taru \& T. Sasaki, “\emph{Space-Division Multiplexed Transmission Over 4200-km 3-Core Microstructured Fiber}”, Optical Fiber Communication Conference (OFC)/NFOEC, Los Angeles CA, 2012.
+\item R. Ryf, M. Mestre, A. Gnauck, S. Randel, C. Schmidt, R. Essiambre, P. Winzer, R. Delbue, P. Pupalaikis, A. Sureka, Y. Sun, X. Jiang, D. Peckham, A. McCurdy \& R. Lingle, “\emph{Low-Loss Mode Coupler for Mode-Multiplexed Transmission in Few-Mode Fiber}”, NFOEC, Los Angeles CA, 2012.
+\item G. Raybon, P. Winzer, A. Adamiecki, A. Gnauck, A. Konczykowska, F. Jorge, J. Dupuy, A. Sureka, C. Scholz, R. Delbue, P. Pupalaikis, L. Buhl, C. Doerr, S. Chandrasekhar, B. Zhu \& D. Peckham, “\emph{8 x 320-Gb/s Transmission Over 5600 km Using All-ETDM 80-Gbaud Polarization Multiplexed QPSK Transmitter and Coherent Receiver}”, OFC, Los Angeles CA, 2012.
+\item N. Fontaine, G. Raybon, B. Guan, A. Adamiecki, P. Winzer, R. Ryf, A. Konczykowska, F. Jorge, J. Dupuy, L. Buhl, S. Chandrasekhar, R. Delbue, P. Pupalaikis \& A. Sureka, “\emph{228-GHz Coherent Receiver using Digital Optical Bandwidth Interleaving and Reception of 214-GBd (856-Gb/s) PDM-QPSK}”, ECOC, Amsterdam NL, 2012.
+\item R. Ryf, S. Randel, M. Mestre, C. Schmidt, A. Gnauck, R. Essiambre, P. Winzer, R. Delbue, P. Pupalaikis, A. Sureka, Y. Sun, X. Jiang, A. McCurdy, D. Peckham \& R. Lingle, “\emph{209-km Single-Span Mode- and Wavelength-Multiplexed Transmission Over Hybrid Few-Mode Fiber}”, ECOC, Amsterdam NL, 2012
+\item R. Ryf, A. Sierra, R. Essiambre, A. Gnauck, S. Randel, M. Esmaeelpour, S. Mumtaz, P. Winzer, R. Delbue, P. Pupalaikis, A. Sureka, T. Hayashi, T. Taru \& T. Sasaki, “\emph{Coherent 1200-km 6 x 6 MIMO Mode-Multiplexed Transmission over 3-Core Microstructured Fiber}”, ECOC, Geneva CH, 2011.
+\item R. Ryf, A. Sierra, R. Essiambre, S. Randel, A. Gnauck, C. Bolle, M. Esmaeelpour, P. Winzer, R. Delbue, P. Pupalaikis, A. Sureka, D. Peckham, A. McCurdy \& R. Lingle, “\emph{Mode-Equalized Distributed Raman Amplification in 137-km Few-Mode Fiber}”, ECOC, Geneva CH, 2011. 
+\item G. Raybon, P. Winzer, A. Adamiecki, A. Gnauck, A. Konczykowska, F. Jorge, J. Dupuy, R. Delbue, P. Pupalaikis, L. Buhl, C. Doerr, S. Chandrasekhar, B. Zhu \& D. Peckham , “\emph{Transmission over 2400 km Using an All-ETDM 80-Gbaud (160-Gb/s) QPSK Transmitter and Coherent Receiver}”, ECOC, Geneva CH, 2011 .
+\item A. Gnauck, P. Winzer, G. Raybon, M. Schnecker \& P. Pupalaikis, “\emph{10 x 224-Gb/s WDM Transmission of 56-Gbaud PDM QPSK Signals over 1890 km of Fiber}”, IEEE Photonics Technology Letters, San Diego CA, 2010 
+\item P. Winzer, A. Gnauck, G. Raybon, M. Schnecker \& P. Pupalaikis, “\emph{56-Gbaud PDM-QPSK: Coherent Detection and 2,500- km Transmission}”, ECOC, Vienna AT, 2009. 
+\end{itemize}\end{indentsection}
+\hrule
+\vspace{-1em}\subsection*{\Large Open-Source Software Projects}\vspace{-0.5em}
+	\parskip=0.1em
+\begin{flushleft} 
+\vspace{0.2em}\begin{indentsection}{-1em}\begin{itemize*}
+		\item \textbf{\emph{SignalIntegrity}} -- \textsf{pypi.org/signalintegrity} -- A set of Python based tools for solving signal integrity problems.
+		\item \textbf{\emph{uspatent}} -- \textsf{ctan.org/pkg/uspatent} -- Tools for writing U.S. patents in LaTeX and LyX.
+\end{itemize*}\end{indentsection}\end{flushleft}
+\vspace{0.2em}
+\hrule
+\vspace{-1em}\subsection*{\Large Societies \& Organizations}\vspace{-0.5em}
+\headerrow
+		{National Academy of Engineering}
+		{since 2024}
+\headerrow
+		{IEEE Instrumentation, Signal Processing,  and Microwave Society}
+		{since 2003}
+\headerrow
+		{IEC DesignCon Technical Planning and Program Committee Track Organizer}
+		{since 2006}
+\headerrow
+		{Chair and Vice-Chair, North Jersey Section, Instrumentation Society Chapter}
+		{2013, 2009}
+\headerrow
+		{Member \TeX~Users Group (TUG) and contributor of the the CTAN package \emph{uspatent}}
+		{2006}
+\headerrow
+		{Corporate Advisory Board Member of ECEDHA}
+		{2013 -- 2019}
+\headerrow
+		{Corporate Advisory Board Member of Rutgers Electrical and Computer Engineering Department}
+		{Since 2015}
+\end{document}
